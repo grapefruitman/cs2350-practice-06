@@ -5,3 +5,12 @@ require.context('../stylesheets/', true, /\.(css|scss)$/i)
 
 // JavaScript
 //TODO
+import 'bootstrap';
+alert("hello"); 
+
+let form = document.getElementById("myForm");
+
+form.onsubmit = function() {
+    let name = document.getElementById("name").value;
+    alert("welcome" + name);
+}
